@@ -13,9 +13,8 @@ function App() {
           className="App-link"
           href="https://reactjs.org"
           target="_blank"
-          
         >
-          Learn React
+          Deployed reactjs
         </a>
       </header>
     </div>
