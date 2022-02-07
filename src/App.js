@@ -21,29 +21,24 @@ const Puss = () => {
 
 	}).catch(alert);
 }
-const Pus = () => {
-	database.ref("ultra_sonic").on({
-	val: val,
 
-	}).catch(alert);
-}
 
 
 const dbRef = database.ref('ultra_sonic');
-dbRef.child("value").child(getVal).get().then((snapshot) => {
-  if (snapshot.exists()) {
-    console.log(snapshot.val());
-  } else {
-    console.log("No data available");
-  }
-}).catch((error) => {
-  console.error(error);
-});
+// dbRef.child('age').child('name').get().then((snapshot) => {
+//   if (snapshot.exists()) {
+//     console.log(snapshot.val());
+//   } else {
+//     console.log("No data available");
+//   }
+// }).catch((error) => {
+//   console.error(error);
+// });
 dbRef.on('value', snapshot => {
-  console.log(snapshot.val().valuex);
+  console.log(snapshot.val());
   val=snapshot.val().valuex;
 });
-
+console.log(dbRef.child('ultra_sonic').get().then())
 
 console.log(`value =${val}`)
 
@@ -61,6 +56,9 @@ return (
 	<br/><br/>
 	<input placeholder="Enter your valuex"  value={valuex}
 	onChange={(e) => setVal(e.target.value)}/>
+	<br/><br/>
+
+	<p onChange={(e) => setVal(e.target.value)}>{valuex}</p>
 	<br/><br/>
   <h1 >value = {val}</h1>
 	<br/><br/>
