@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Aquaponics-Major/React-app/static/css/main.073c9b0a.css",
+    "main.js": "/Aquaponics-Major/React-app/static/js/main.24fc0bbe.js",
+    "static/js/787.d4cd4976.chunk.js": "/Aquaponics-Major/React-app/static/js/787.d4cd4976.chunk.js",
+    "static/media/logo.svg": "/Aquaponics-Major/React-app/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/Aquaponics-Major/React-app/index.html",
+    "main.073c9b0a.css.map": "/Aquaponics-Major/React-app/static/css/main.073c9b0a.css.map",
+    "main.24fc0bbe.js.map": "/Aquaponics-Major/React-app/static/js/main.24fc0bbe.js.map",
+    "787.d4cd4976.chunk.js.map": "/Aquaponics-Major/React-app/static/js/787.d4cd4976.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.24fc0bbe.js"
+  ]
+}
