@@ -3,9 +3,6 @@ import firebase from "../util/firebase";
 
 
 export default function TodoList() {
-
-  //variables to get the values from firebase
-
   const [ultrasonicValue, getUSV] = useState();
   const [phValue, getPHV] = useState();
   const [tdsValue, getTDSV] = useState();
@@ -14,14 +11,11 @@ export default function TodoList() {
   
 
   useEffect(() => {
-
-    //Creating firebase refrence variable that can get parent elements from database
     const valueRef = firebase.database().ref();
   
-    //accessing child elements of database
 
     valueRef.on("value", (snapshot) => {
-      const dht_Value = snapshot.val().DHT_value;   //here DHT_value is a child element of .ref()
+      const dht_Value = snapshot.val().DHT_value;
       const ph_Value = snapshot.val().ph_value;
       const tds_Value = snapshot.val().TDS_value;
       const ultrasonic_Value = snapshot.val().ultrasonic_value;
