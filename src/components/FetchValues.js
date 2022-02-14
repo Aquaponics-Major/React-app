@@ -44,11 +44,61 @@ export default function TodoList() {
 
   return (
     <div className="title">
-      <h1>Sensor List</h1>
-      <p>ultrasonic: <span>{ultrasonicValue}</span></p>
-      <p>PH: <span>{phValue}</span></p>
-      <p>TDS value: <span>{tdsValue}</span></p>
-      <p>DHT: <span>{dhtValue}</span></p>
+      {/* <h1>Sensor List xyz</h1>
+      <p>
+        ultrasonic: <span>{ultrasonicValue}</span>
+      </p>
+      <p>
+        PH: <span>{phValue}</span>
+      </p>
+      <p>
+        TDS value: <span>{tdsValue}</span>
+      </p>
+      <p>
+        DHT: <span>{dhtValue}</span>
+      </p> */}
+
+      <div class="home-content">
+        <div class="overview-boxes">
+          <div class="box">
+            <div class="right-side">
+              <div class="box-topic">TDS sensor</div>
+              <div class="number">
+                <span>{tdsValue}</span>
+              </div>
+            </div>
+            <i class="bx bx-cart-alt cart"></i>
+          </div>
+          <div class="box">
+            <div class="right-side">
+              <div class="box-topic">ph reading</div>
+              <div class="number">
+                <span>{phValue}</span>
+              </div>
+            </div>
+            <i class="bx bxs-cart-add cart two"></i>
+          </div>
+          <div class="box">
+            <div class="right-side">
+              <div class="box-topic">ultrasonic</div>
+              <div class="number">
+                {" "}
+                <span>{ultrasonicValue}</span>
+              </div>
+            </div>
+            <i class="bx bx-cart cart three"></i>
+          </div>
+          <div class="box">
+            <div class="right-side">
+              <div class="box-topic">DHT</div>
+              <div class="number">
+                <span>{dhtValue}</span>
+              </div>
+            </div>
+            <i class="bx bxs-cart-download cart four"></i>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
