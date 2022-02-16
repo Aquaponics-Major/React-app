@@ -10,7 +10,7 @@ function App() {
       <div className="app-wrapper">
         <div>
           <TodoList />
-          {/* <ToggleSwitch label = "Feeder Active"/> */}
+          <ToggleSwitch label = "Feeder Active"/>
         </div>
         <div></div>
       </div>
