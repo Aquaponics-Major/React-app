@@ -60,27 +60,27 @@ export default function TodoList() {
 
       <div class="home-content">
         <div class="overview-boxes">
-          <div class="box">
+          <div class="box-1 box">
             <div class="right-side">
-              <div class="box-topic">TDS sensor</div>
+              <div class="box-topic">Turbidity</div>
               <div class="number">
                 <span>{tdsValue}</span>
               </div>
             </div>
             <i class="bx bx-cart-alt cart"></i>
           </div>
-          <div class="box">
+          <div class="box-2 box">
             <div class="right-side">
-              <div class="box-topic">ph reading</div>
+              <div class="box-topic">pH </div>
               <div class="number">
                 <span>{phValue}</span>
               </div>
             </div>
-            <i class="bx bxs-cart-add cart two"></i>
+            <i class="bx bxs-cart-add cart two "></i>
           </div>
-          <div class="box">
+          <div class="box-3 box">
             <div class="right-side">
-              <div class="box-topic">ultrasonic</div>
+              <div class="box-topic">Ultrasonic</div>
               <div class="number">
                 {" "}
                 <span>{ultrasonicValue}</span>
@@ -88,7 +88,7 @@ export default function TodoList() {
             </div>
             <i class="bx bx-cart cart three"></i>
           </div>
-          <div class="box">
+          <div class="box-4 box">
             <div class="right-side">
               <div class="box-topic">DHT</div>
               <div class="number">
