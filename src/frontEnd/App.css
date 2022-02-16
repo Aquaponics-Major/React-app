@@ -437,8 +437,9 @@ nav .profile-details i{
   .home-content .sales-boxes .top-sales{
     margin: 0;
   }
+  
 }
-@media (max-width: 1000px) {
+@media (max-width: 1600px) {
   .overview-boxes .box{
     width: calc(100% / 2 - 15px);
     margin-bottom: 15px;
@@ -458,7 +459,7 @@ nav .profile-details i{
     width: 560px;
   }
 }
-@media (max-width: 550px) {
+@media (max-width: 1000px) {
   .overview-boxes .box{
     width: 100%;
     margin-bottom: 15px;
