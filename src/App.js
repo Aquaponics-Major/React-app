@@ -1,7 +1,6 @@
 import React from "react";
-import "./App.css";
-// import ToggleSwitch from "./components/ToggleSwitch/ToggleSwitch";
-import FetchValues from "./components/FetchValues";
+import "./App.css"
+import FetchValues from "./components/FetchValues/FetchValues";
 
 function App() {
   return (
@@ -9,6 +8,7 @@ function App() {
       <div className="app-wrapper">
         <div>
           <FetchValues />
+
           {/* <ToggleSwitch label = "Feeder Active"/> */}
         </div>
         <div></div>
@@ -18,5 +18,3 @@ function App() {
 }
 
 export default App;
-
-
