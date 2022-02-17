@@ -61,7 +61,8 @@ export default function TodoList() {
   const [ultrasonicValue, getUSV] = useState();
   const [phValue, getPHV] = useState();
   const [tdsValue, getTDSV] = useState();
-  const [dhtValue, getDHTV] = useState();
+  const [dhtValueH, getDHTVH] = useState();    //Humidity
+  const [dhtValueT, getDHTVT] = useState();     //Temperature
  
   
 
@@ -70,7 +71,8 @@ export default function TodoList() {
   
 
     valueRef.on("value", (snapshot) => {
-      const dht_Value = snapshot.val().DHT_value;
+      const dht_Value_Temperature = snapshot.val().DHT_value_Temperature;
+      const dht_Value__Humidity = snapshot.val().DHT_value_Humidity;
       const ph_Value = snapshot.val().ph_value;
       const tds_Value = snapshot.val().TDS_value;
       const ultrasonic_Value = snapshot.val().ultrasonic_value;
@@ -78,7 +80,8 @@ export default function TodoList() {
       // console.log(ultrasonicValue);
       
 
-      const dhtValue = dht_Value;
+      const dhtValueT = dht_Value_Temperature;
+      const dhtValueH = dht_Value__Humidity;
       const phValue = ph_Value;
       const tdsValue = tds_Value;
       const ultrasonicValue = ultrasonic_Value;
@@ -86,11 +89,12 @@ export default function TodoList() {
         
   
      
-      getDHTV(dhtValue);
+      getDHTVT(dhtValueT);
+      getDHTVH(dhtValueH);
       getTDSV(tdsValue);
       getPHV(phValue);
       getUSV(ultrasonicValue);
-      console.log("DHT->", dhtValue);
+      console.log("DHT->", dhtValueT);
       console.log("ultrasonic->", ultrasonicValue);
       console.log("PH->", phValue);
       console.log("TDS->", tdsValue);
@@ -145,9 +149,18 @@ export default function TodoList() {
           </div>
           <div class="box">
             <div class="right-side">
-              <div class="box-topic">DHT</div>
+              <div class="box-topic">Temp</div>
               <div class="number">
-                <span>{dhtValue}</span>
+                <span>{dhtValueT}</span>
+              </div>
+            </div>
+            <i class="bx bxs-cart-download cart four"></i>
+          </div>
+          <div class="box">~~
+            <div class="right-side">
+              <div class="box-topic">Humidity</div>
+              <div class="number">
+                <span>{dhtValueH}</span>
               </div>
             </div>
             <i class="bx bxs-cart-download cart four"></i>
