@@ -1,15 +1,14 @@
 import React from "react";
 import "./App.css";
-import ToggleSwitch from "./components/ToggleSwitch/ToggleSwitch";
-import TodoList from "./components/FetchValues";
-import Title from "./components/Title";
+// import ToggleSwitch from "./components/ToggleSwitch/ToggleSwitch";
+import FetchValues from "./components/FetchValues";
 
 function App() {
   return (
     <div className="container">
       <div className="app-wrapper">
         <div>
-          <TodoList />
+          <FetchValues />
           {/* <ToggleSwitch label = "Feeder Active"/> */}
         </div>
         <div></div>
@@ -21,6 +20,3 @@ function App() {
 export default App;
 
 
-
-// https://www.youtube.com/watch?v=OlyA7Q0qPPE
-// https://github.com/hannah-gkim/firebase-crud-todoList
