@@ -5,6 +5,7 @@ import {
   Humidity,
   Ph,
   Turbidity,
+  FishFeeder
 } from "../Values/index";
 export default function FetchValues() {
   return (
@@ -16,6 +17,7 @@ export default function FetchValues() {
           <Ph />
           <Turbidity />
           <Ultrasonic />
+          <FishFeeder/>
         </div>
       </div>
     </div>
