@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import firebase from "../../util/firebase";
 
-function FishFeeder(val) {
+const  FishFeeder = () => {
   const [servoStatus, setFeeder] = useState(); //Humidity
 
 
