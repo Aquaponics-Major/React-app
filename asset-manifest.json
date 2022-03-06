@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/React-app/static/css/main.abd96517.css",
-    "main.js": "/React-app/static/js/main.3fb314ff.js",
+    "main.js": "/React-app/static/js/main.959ca490.js",
     "static/media/ultrasonic_sensor-removebg-preview.png": "/React-app/static/media/ultrasonic_sensor-removebg-preview.9a069162715290a3e62d.png",
     "static/media/turbidity.png": "/React-app/static/media/turbidity.0066c5c5e6af15a56f47.png",
     "static/media/humidity-mobile-application.png": "/React-app/static/media/humidity-mobile-application.6efc4dcab87709dbde3d.png",
     "static/media/ph-meter.png": "/React-app/static/media/ph-meter.9e736203f36c5e6693ee.png",
     "index.html": "/React-app/index.html",
     "main.abd96517.css.map": "/React-app/static/css/main.abd96517.css.map",
-    "main.3fb314ff.js.map": "/React-app/static/js/main.3fb314ff.js.map"
+    "main.959ca490.js.map": "/React-app/static/js/main.959ca490.js.map"
   },
   "entrypoints": [
     "static/css/main.abd96517.css",
-    "static/js/main.3fb314ff.js"
+    "static/js/main.959ca490.js"
   ]
 }
