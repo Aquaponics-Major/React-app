@@ -1,15 +1,15 @@
 import { useState, useEffect } from "react";
 import firebase from "../../util/firebase";
 
-function FishFeeder(val) {
-  const [servoStatus, setFeeder] = useState(); //Humidity
+const  FishFeeder = () => {
+  const [ServoStatus, setFeeder] = useState(); //Humidity
 
 
   const OFF=() =>{
       const feederRef = firebase.database().ref();;
       feederRef.update({
           
-        servoStatus: false,
+        ServoStatus: false,
 
       });
   };
@@ -17,29 +17,25 @@ function FishFeeder(val) {
     const feederRef = firebase.database().ref();;
 
     feederRef.update({
-        servoStatus: true,
+        ServoStatus: true,
     });
   };
 
-//   const handleChange = (e) => {
-//     // const feederRef = firebase.database().ref("servoStatus");;
 
-    
-//   }
   useEffect(() => {
     // var checkbox = document.querySelector('input[type="checkbox"]');
 
-    const valueRef = firebase.database().ref("servoStatus");
+    const valueRef = firebase.database().ref("ServoStatus");
 
     
     valueRef.on("value", (snapshot) => {
     
-      const servostatus = snapshot.val();
+      const ServoStatus = snapshot.val();
 
-      const servoStatus = servostatus;
-      setFeeder(servoStatus);
+      const servoStatus = ServoStatus;
+      setFeeder(ServoStatus);
 
-      console.log("Feeder->", servoStatus);
+      console.log("Feeder->", ServoStatus);
     });
 
    
@@ -53,8 +49,8 @@ function FishFeeder(val) {
       <div className="number">
         {" "}
         <span>
-            <button className="ON" onClick={servoStatus===true? OFF: ON}>
-            {servoStatus===true? "OFF": "ON"}
+            <button className="ON" onClick={ServoStatus===true? OFF: ON}>
+            {ServoStatus===true? "OFF": "ON"}
             </button>
             
             
