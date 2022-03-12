@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import firebase from "../../util/firebase";
 
 const  FishFeeder = () => {
-  const [ServoStatus, setFeeder] = useState(); //Humidity
+  const [servoStatus, setFeeder] = useState(); //Humidity
 
 
   const OFF=() =>{
@@ -49,8 +49,8 @@ const  FishFeeder = () => {
       <div className="number">
         {" "}
         <span>
-            <button className="ON" onClick={ServoStatus===true? OFF: ON}>
-            {ServoStatus===true? "OFF": "ON"}
+            <button className="ON" onClick={servoStatus===true? OFF: ON}>
+            {servoStatus===true? "OFF": "ON"}
             </button>
             
             
@@ -62,18 +62,7 @@ const  FishFeeder = () => {
   </div>
 
    
-    // <div>
-      
-
-    //   <button className="ON" onClick={ON}>
-    //     ON
-    //   </button>
-    //   <button className="OFF" onClick={OFF}>
-    //       OFF
-    //     </button>
-
-     
-    // </div>
+  
   
   );
 };
