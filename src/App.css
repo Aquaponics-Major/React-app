@@ -4,7 +4,7 @@
 }
 /* App.js */
 .container {
-  background: #000;
+  background: #0c271d;
   width: 100%;
   min-height: 100vh;
   display: flex;
@@ -12,8 +12,9 @@
   align-items: center;
 }
 .app-wrapper {
-  background: #ffffff;
+  /* background:  linear-gradient( 109.6deg,  rgba(24,138,141,1) 11.2%, rgba(96,221,142,1) 91.1% ); */
   min-width: 450px;
+  background: #0c271d;
   min-height: 650px;
   padding: 30px;
   box-sizing: border-box;
@@ -229,49 +230,28 @@ nav .profile-details i {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 0 20px;
+  padding:10px 20px;
   margin-bottom: 26px;
 }
-.overview-boxes .box-1 {
+
+.overview-boxes .box {
   display: flex;
   align-items: center;
   justify-content: center;
   width: calc(100% / 4 - 15px);
-  background: linear-gradient(to right bottom, #402565, #30be96);
+  background: #fff;
+  margin: 40px;
   padding: 15px 14px;
-  border-radius: 12px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 7.5px;
+  box-shadow:  27px 27px 54px #b3b3b3,
+  -27px -27px 54px #ffffff;
+
+  border-radius: 58px;
+background: linear-gradient(145deg, #0b231a, #0d2a1f);
+box-shadow:  27px 27px 54px #0a1f17,
+             -27px -27px 54px #0e2f23;
 }
-.overview-boxes .box-2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: calc(100% / 4 - 15px);
-  background: linear-gradient(to right bottom, #f14658, #dc2537);
-  padding: 15px 14px;
-  border-radius: 12px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-}
-.overview-boxes .box-3 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: calc(100% / 4 - 15px);
-  background: linear-gradient(to right bottom, #402662, #3900a6);
-  padding: 15px 14px;
-  border-radius: 12px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-}
-.overview-boxes .box-4 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: calc(100% / 4 - 15px);
-  background: linear-gradient(to right bottom, #ffa62e, #ea4d2c);
-  padding: 15px 14px;
-  border-radius: 12px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-}
+
 .overview-boxes .box-topic {
   font-size: 22px;
   font-weight: 500;

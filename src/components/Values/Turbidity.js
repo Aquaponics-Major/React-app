@@ -16,7 +16,7 @@ const Turbidity = () => {
   }, []);
 
   return (
-    <div className="box-1 box">
+    <div className="box">
       <div className="right-side">
         <div className="box-topic">Turbidity</div>
         <div className="number">

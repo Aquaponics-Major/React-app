@@ -17,7 +17,7 @@ const Ph = () => {
   }, []);
 
   return (
-    <div className="box-2 box">
+    <div className="box">
       <div className="right-side">
         <div className="box-topic">pH </div>
         <div className="number">

@@ -16,7 +16,7 @@ const Ultrasonic = () => {
     });
   }, []);
   return (
-    <div className="box-3 box">
+    <div className="box">
       <div className="right-side">
         <div className="box-topic">Ultrasonic</div>
         <div className="number">

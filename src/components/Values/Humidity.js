@@ -17,7 +17,7 @@ const Humidity = () => {
   }, []);
 
   return (
-    <div className="box-3 box">
+    <div className="box">
       <div className="right-side">
         <div className="box-topic">Humidity</div>
         <div className="number">

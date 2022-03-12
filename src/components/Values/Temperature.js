@@ -14,7 +14,7 @@ const Temperature = () => {
   }, []);
 
   return (
-    <div className="box-3 box">
+    <div className="box">
       <div className="right-side">
         <div className="box-topic">Temperature</div>
         <div className="number">

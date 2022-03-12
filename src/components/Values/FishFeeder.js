@@ -2,14 +2,14 @@ import { useState, useEffect } from "react";
 import firebase from "../../util/firebase";
 
 const  FishFeeder = () => {
-  const [servoStatus, setFeeder] = useState(); //Humidity
+  const [ServoStatus, setFeeder] = useState(); //Humidity
 
 
   const OFF=() =>{
       const feederRef = firebase.database().ref();;
       feederRef.update({
           
-        ServoStatus: false,
+        servoStatus: false,
 
       });
   };
@@ -17,15 +17,15 @@ const  FishFeeder = () => {
     const feederRef = firebase.database().ref();;
 
     feederRef.update({
-        ServoStatus: true,
+        servoStatus: true,
     });
   };
 
 
   useEffect(() => {
-    // var checkbox = document.querySelector('input[type="checkbox"]');
+    
 
-    const valueRef = firebase.database().ref("ServoStatus");
+    const valueRef = firebase.database().ref("servoStatus");
 
     
     valueRef.on("value", (snapshot) => {
@@ -49,8 +49,8 @@ const  FishFeeder = () => {
       <div className="number">
         {" "}
         <span>
-            <button className="ON" onClick={servoStatus===true? OFF: ON}>
-            {servoStatus===true? "OFF": "ON"}
+            <button className="ON" onClick={ServoStatus===true? OFF: ON}>
+            {ServoStatus===true? "ON": "OFF"}
             </button>
             
             
