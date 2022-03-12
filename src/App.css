@@ -233,22 +233,45 @@ nav .profile-details i {
   padding:10px 20px;
   margin-bottom: 26px;
 }
-
+.ON{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(100% / 4 - 15px);
+  background: #fff;
+  margin: 40px 10px;
+  padding: 15px 14px;
+ 
+  box-shadow:  27px 27px 54px #b3b3b3,
+  -27px -27px 54px #ffffff;
+  z-index: -10;
+  border-radius: 40px;
+  background: linear-gradient(145deg, #0b231a, #0d2a1f);
+  box-shadow:  27px 27px 54px #0a1f17,
+             -27px -27px 54px #0e2f23;
+}
+.ON:hover{
+  background-color: green;
+}
+.right-side{
+  margin: 25px 5px;
+  padding: 25px 5px;
+}
 .overview-boxes .box {
   display: flex;
   align-items: center;
   justify-content: center;
   width: calc(100% / 4 - 15px);
   background: #fff;
-  margin: 40px;
+  margin: 40px 10px;
   padding: 15px 14px;
-  border-radius: 7.5px;
+  
   box-shadow:  27px 27px 54px #b3b3b3,
   -27px -27px 54px #ffffff;
 
-  border-radius: 58px;
-background: linear-gradient(145deg, #0b231a, #0d2a1f);
-box-shadow:  27px 27px 54px #0a1f17,
+  border-radius: 40px;
+  background: linear-gradient(145deg, #0b231a, #0d2a1f);
+  box-shadow:  27px 27px 54px #0a1f17,
              -27px -27px 54px #0e2f23;
 }
 
@@ -298,7 +321,7 @@ box-shadow:  27px 27px 54px #0a1f17,
   border-radius: 12px;
   margin: -15px 2rem 6px;
   backdrop-filter: blur(5px);
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255,0.05 );
   background-image: url(../public/turbidity.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -306,7 +329,7 @@ box-shadow:  27px 27px 54px #0a1f17,
 }
 .home-content .box .cart.two {
   backdrop-filter: blur(5px);
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.05);
   background-image: url(../public/ph-meter.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -322,7 +345,7 @@ box-shadow:  27px 27px 54px #0a1f17,
 }
 .home-content .box .cart.four {
   backdrop-filter: blur(5px);
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.05);
   background-image: url(../public/humidity-mobile-application.png);
   background-position: center;
   background-repeat: no-repeat;
