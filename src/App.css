@@ -257,13 +257,16 @@ nav .profile-details i {
   margin: 25px 5px;
   padding: 25px 5px;
 }
+button{
+  border-style: none;
+}
 .overview-boxes .box {
   display: flex;
   align-items: center;
   justify-content: center;
   width: calc(100% / 4 - 15px);
   background: #fff;
-  margin: 40px 10px;
+  margin: 30px 10px;
   padding: 15px 14px;
   
   box-shadow:  27px 27px 54px #b3b3b3,
@@ -285,7 +288,7 @@ nav .profile-details i {
   display: inline-block;
   font-size: 30px;
   margin-top: 6px;
-  font-weight: 500;
+  font-weight: 400;
   color: #fff;
 }
 .home-content .box .indicator {
