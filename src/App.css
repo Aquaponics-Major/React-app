@@ -247,8 +247,8 @@ nav .profile-details i {
   z-index: -10;
   border-radius: 40px;
   background: linear-gradient(145deg, #0b231a, #0d2a1f);
-  box-shadow:  27px 27px 54px #0a1f17,
-             -27px -27px 54px #0e2f23;
+  box-shadow:  37px 37px 70px #0a1f17,
+             -37px -37px 54px #0e2f23;
 }
 .ON:hover{
   background-color: green;
@@ -279,13 +279,14 @@ button{
 }
 
 .overview-boxes .box-topic {
-  font-size: 22px;
-  font-weight: 500;
+  font-size: 30px;
+  font-weight: 700;
   color: #fff;
-  font-family: Helvetica, Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans', Helvetica, Arial, Helvetica, sans-serif;
 }
 .home-content .box .number {
   display: inline-block;
+  font-family:'Open Sans', Helvetica, Arial, Helvetica, sans-serif;
   font-size: 30px;
   margin-top: 6px;
   font-weight: 400;
