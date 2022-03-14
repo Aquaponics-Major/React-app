@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/React-app/static/css/main.28a2f543.css",
-    "main.js": "/React-app/static/js/main.3329b038.js",
+    "main.css": "/React-app/static/css/main.a084f6e4.css",
+    "main.js": "/React-app/static/js/main.7bb843f5.js",
     "static/media/ultrasonic_sensor-removebg-preview.png": "/React-app/static/media/ultrasonic_sensor-removebg-preview.9a069162715290a3e62d.png",
     "static/media/turbidity.png": "/React-app/static/media/turbidity.0066c5c5e6af15a56f47.png",
     "static/media/humidity-mobile-application.png": "/React-app/static/media/humidity-mobile-application.6efc4dcab87709dbde3d.png",
     "static/media/ph-meter.png": "/React-app/static/media/ph-meter.9e736203f36c5e6693ee.png",
     "index.html": "/React-app/index.html",
-    "main.28a2f543.css.map": "/React-app/static/css/main.28a2f543.css.map",
-    "main.3329b038.js.map": "/React-app/static/js/main.3329b038.js.map"
+    "main.a084f6e4.css.map": "/React-app/static/css/main.a084f6e4.css.map",
+    "main.7bb843f5.js.map": "/React-app/static/js/main.7bb843f5.js.map"
   },
   "entrypoints": [
-    "static/css/main.28a2f543.css",
-    "static/js/main.3329b038.js"
+    "static/css/main.a084f6e4.css",
+    "static/js/main.7bb843f5.js"
   ]
 }
