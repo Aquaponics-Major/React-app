@@ -38,12 +38,12 @@ db.on("value", (snapshot) => {
   });
   const options = {
     from: "aquaponics2022mp@outlook.com",
-    to: "tusharkarade10@gmail.com",
+    to: "aquaponics2022mp@gmail.com",
     subject: "Readings of aquaponics system " + timestamp,
     text: "Humidity: "  + dht_Value__Humidity + "\nTemperature: " + dht_Value_Temperature + "\npH: " + ph_Value + "\nUltrasonic sensor: " + ultrasonic_Value + "\nTurbidity: " +tds_Value
   };
 
-  cron.schedule('* 2 * * *', ()=>{
+  cron.schedule('* * * * *', ()=>{
 
     transporter.sendMail(options, function (err, info) {
       if (err) {
