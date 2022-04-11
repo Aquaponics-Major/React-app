@@ -6,15 +6,14 @@ import cron from 'node-cron';
 
 
 const db = firebase.database().ref();
+
 db.on("value", (snapshot) => {
+
     const dht_Value__Humidity = snapshot.val().DHT_value_Humidity;
     const ultrasonic_Value = snapshot.val().ultrasonic_value;
     const tds_Value = snapshot.val().TDS_value;
     const dht_Value_Temperature = snapshot.val().DHT_value_Temperature;
     const ph_Value = snapshot.val().ph_value;
-
-   
-
 
 //   const nodemailer = require("nodemailer");
 
@@ -40,10 +39,10 @@ db.on("value", (snapshot) => {
     from: "aquaponics2022mp@outlook.com",
     to: "aquaponics2022mp@gmail.com",
     subject: "Readings of aquaponics system " + timestamp,
-    text: "Humidity: "  + dht_Value__Humidity + "\nTemperature: " + dht_Value_Temperature + "\npH: " + ph_Value + "\nUltrasonic sensor: " + ultrasonic_Value + "\nTurbidity: " +tds_Value
+    text: "Humidity: "  + dht_Value__Humidity + "%\nTemperature: " + dht_Value_Temperature + "°C\npH: " + ph_Value + "\nUltrasonic sensor: " + ultrasonic_Value + " cm\nTurbidity: " +tds_Value +" ppm\n"
   };
 
-  cron.schedule('* * * * *', ()=>{
+  cron.schedule('0 0 */03 * * *', ()=>{
 
     transporter.sendMail(options, function (err, info) {
       if (err) {
@@ -52,7 +51,7 @@ db.on("value", (snapshot) => {
       }
       console.log("sent: " + info.response);
 
-  })
+    })
 
   });
 });
